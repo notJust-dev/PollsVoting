@@ -33,14 +33,11 @@ export default function HomeScreen() {
               <AntDesign name="plus" size={20} color="gray" />
             </Link>
           ),
-          // headerRight: () => (
-          //   <AntDesign
-          //     onPress={() => router.push('/polls/new')}
-          //     name="plus"
-          //     size={20}
-          //     color="gray"
-          //   />
-          // ),
+          headerLeft: () => (
+            <Link href={'/profile'}>
+              <AntDesign name="user" size={20} color="gray" />
+            </Link>
+          ),
         }}
       />
       <FlatList
